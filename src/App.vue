@@ -1,9 +1,10 @@
 <template>
-  <nav>
+  <router-view />
+  <nav class="footer-nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+
 </template>
 
 <style>
@@ -12,11 +13,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(209, 209, 209);
+  background: rgb(39, 39, 39);
+}
+
+body {
+  background: rgb(39, 39, 39);
+  margin: 0;
 }
 
 nav {
   padding: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(87, 87, 87);
+  color: rgb(209, 209, 209);
+  text-align: center;
 }
 
 nav a {
